@@ -84,7 +84,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
     } catch (e: any) {
       if (e.message === "Request failed with status code 404") {
 
-        toast.error('Erro na alteração de quantidade do produto')
+        toast.error("Erro na alteração de quantidade do produto")
       } else {
 
         toast.error(e.message)
